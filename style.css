@@ -1,0 +1,778 @@
+/*
+|--------------------------------------------------------------------------
+| Lorie's Food Hub POS
+| Shared Stylesheet
+|--------------------------------------------------------------------------
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Main Container
+|--------------------------------------------------------------------------
+*/
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Page Header
+|--------------------------------------------------------------------------
+*/
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    margin-bottom: 5px;
+}
+
+.page-header p {
+    margin-top: 0;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Navigation
+|--------------------------------------------------------------------------
+*/
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 10px 16px;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Sections
+|--------------------------------------------------------------------------
+*/
+
+.section {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Buttons
+|--------------------------------------------------------------------------
+*/
+
+.btn {
+    display: inline-block;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #222;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #e9e9e9;
+    color: #222;
+}
+
+.nav-links a.btn-primary {
+    background-color: #222;
+    color: #ffffff;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Responsive Design
+|--------------------------------------------------------------------------
+*/
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+    #product-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .order-item {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .item-info {
+        width: 100%;
+        flex: none;
+    }
+
+    .quantity-controls {
+        margin-top: 4px;
+    }
+
+        #clear-order,
+    #confirm-order {
+        width: 100%;
+        min-height: 48px;
+        margin-top: 8px;
+    }
+
+        #back-to-order,
+    #final-confirm {
+        width: 100%;
+        min-height: 48px;
+        margin-top: 8px;
+    }
+
+        #new-order-button {
+        width: 100%;
+        min-height: 48px;
+        margin-top: 10px;
+    }
+
+/*
+|--------------------------------------------------------------------------
+| Login Page
+|--------------------------------------------------------------------------
+*/
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-header h1 {
+    margin-bottom: 5px;
+}
+
+.login-header p {
+    margin-top: 0;
+    color: #666;
+}
+
+.login-card h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.login-button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.error-message {
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Forms
+|--------------------------------------------------------------------------
+*/
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Messages
+|--------------------------------------------------------------------------
+*/
+
+.success-message {
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+}
+
+.error-message {
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Tables
+|--------------------------------------------------------------------------
+*/
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f5f5f5;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Product Status
+|--------------------------------------------------------------------------
+*/
+
+.status-available {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-unavailable {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Action Links
+|--------------------------------------------------------------------------
+*/
+
+.action-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Ordering System
+|--------------------------------------------------------------------------
+*/
+
+.category-button {
+    min-height: 48px;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #222;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.category-button.active {
+    background-color: #222;
+    color: #ffffff;
+    border-color: #222;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(140px, 1fr)
+    );
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.product-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #222;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.product-button:hover {
+    background-color: #f0f0f0;
+}
+
+.product-button strong {
+    margin-bottom: 5px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Order Item Controls
+|--------------------------------------------------------------------------
+*/
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity-button {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    color: #222;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.quantity-button:hover {
+    background-color: #e9e9e9;
+}
+
+.remove-button {
+    border: none;
+    background-color: transparent;
+    color: #222;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Order Summary
+|--------------------------------------------------------------------------
+*/
+
+#order-total {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#clear-order,
+#confirm-order {
+    margin-top: 5px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#clear-order {
+    background-color: #e9e9e9;
+    color: #222;
+}
+
+#confirm-order {
+    background-color: #222;
+    color: #ffffff;
+}
+
+#clear-order:hover {
+    background-color: #ddd;
+}
+
+#confirm-order:hover {
+    background-color: #444;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Order Review
+|--------------------------------------------------------------------------
+*/
+
+#review-items {
+    margin-bottom: 15px;
+}
+
+#review-items p {
+    margin: 8px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+#review-total {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#back-to-order,
+#final-confirm {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#back-to-order {
+    background-color: #e9e9e9;
+    color: #222;
+}
+
+#final-confirm {
+    background-color: #222;
+    color: #ffffff;
+}
+
+#back-to-order:hover {
+    background-color: #ddd;
+}
+
+#final-confirm:hover {
+    background-color: #444;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Order Completed
+|--------------------------------------------------------------------------
+*/
+
+#order-completed {
+    text-align: center;
+}
+
+#order-completed h3 {
+    margin-bottom: 20px;
+}
+
+#order-completed p {
+    margin: 10px 0;
+}
+
+#completed-reference {
+    font-size: 18px;
+}
+
+#completed-total {
+    font-size: 20px;
+}
+
+#new-order-button {
+    margin-top: 10px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#new-order-button:hover {
+    background-color: #444;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.status-completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-cancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.table-container .btn {
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .table-container .btn {
+        min-height: 44px;
+        padding: 10px 14px;
+    }
+}
+
+.order-total-section {
+    text-align: right;
+}
+
+.order-total-section h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+
+    .order-total-section h3 {
+        font-size: 22px;
+    }
+
+    .order-total-section {
+        padding: 15px;
+    }
+
+}
+
+.report-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.summary-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.summary-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.summary-value {
+    display: block;
+    font-size: 22px;
+}
+
+@media (max-width: 600px) {
+
+    .report-summary {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.report-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.summary-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.summary-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.summary-value {
+    display: block;
+    font-size: 22px;
+}
+
+@media (max-width: 600px) {
+
+    .report-summary {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,31 @@
+{
+    "id": "/lorie-food-hub-pos/",
+    "name": "Lorie's Food Hub POS",
+    "short_name": "Lorie's POS",
+    "description": "Point of Sale System for Lorie's Food Hub",
+    "start_url": "/lorie-food-hub-pos/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#E9B511",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/lorie-food-hub-pos/assets/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/lorie-food-hub-pos/assets/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/lorie-food-hub-pos/assets/icons/icon-512-maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
